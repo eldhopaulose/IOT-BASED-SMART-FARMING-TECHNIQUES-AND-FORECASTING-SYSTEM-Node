@@ -117,7 +117,8 @@ void getTemperatureAndHumidityValue() {
   Serial.print("Temperature: ");
   Serial.print(temperatureValue);
   Serial.print("C");
-  Serial.println("Humidity: ");
+  Serial.print("\n");
+  Serial.print("Humidity: ");
   Serial.print(humidityValue);
   Serial.print("%");
 }
@@ -172,7 +173,7 @@ void getNPK() {
   }
 
 
-
+  Serial.print("\n");
   Serial.print("Nitrogen: ");
   Serial.print(variable.nitrogen);
   Serial.println(" mg/kg");
@@ -238,5 +239,5 @@ void loop() {
     Serial.println("WiFi Disconnected");
   }
 
-  delay(5000);
+  delay(1000*60*5);
 }
